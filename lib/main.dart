@@ -14,10 +14,10 @@ class Contact {
 
 class MyApp extends StatelessWidget {
   final List<Contact> contacts = [
-    Contact('João Zavisas', 'RA: 1431432312032', 'assets/contact_images/yudi.png'),
+    Contact('João Zavisas', 'RA: 1431432312032', 'assets/contact_images/JoaoZavisas.png'),
     Contact('Ana Flavia', 'RA: 000000000000', 'assets/contact_images/woman.png'),
-    Contact('Flavia Silva', 'RA: 1111111111111', 'assets/contact_images/woman2.png'),
-    Contact('Machado De Assis', 'RA: 2222222222222', 'assets/contact_images/homem.png')
+    Contact('Yudi', 'RA: 000000000000 ', 'assets/contact_images/yudi.png'),
+    Contact('Marcos', 'RA: 000000000000', 'assets/contact_images/homem.png')
   ];
 
   @override
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green, //cor container
+          backgroundColor: Colors.purple, //cor container
           title: Text('Lista de Contatos | Fatec '), //texto dentro desse container
         ),
         body: ContactList(contacts),
